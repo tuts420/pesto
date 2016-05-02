@@ -48,5 +48,6 @@ $db->table('classics')->insert($consoles);
 $classics = $db->table('classics')->get();
 
 foreach($classics as $classic) {
-	print "<img src=" . $classic->image . ">";
+	echo '<h1 style="font-family: sans-serif;">', $classic->name, '</h1>';
+	print '<img src="' . $classic->image . '"width="300", height="200">';
 }
